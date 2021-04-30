@@ -16,4 +16,8 @@
     {% endfor %}
 </ul>
 
+<p>
+    <a href="{% url 'pizzas:new_comment' pizza.id %}">Add new comment</a>
+</p>
+
 {% endblock content %}
