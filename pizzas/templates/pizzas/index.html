@@ -1,13 +1,14 @@
 {% extends "pizzas/base.html" %}
+{% load bootstrap4 %}
 
-{% block content %}
+{% block page_header %}
+<div class="jumbotron">
+    <hi class="display-3">Welcome to Dave's Pizzeria!</hi>
 
-<p> Welcome to our Pizzeria - where our pizzas are as invisible as they are delicious! <br>
-    Browse our menu now.
-
-</p>
-
-{% endblock content %}
+    <p class="lead">Our pizzas are as invisible as they are delicious! <br>
+        Browse our menu now.</p>
+</div>
+{% endblock page_header %}
 
 <!--
 <form method="post" enctype="multipart/form-data">
