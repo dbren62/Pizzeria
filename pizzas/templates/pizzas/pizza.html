@@ -20,4 +20,16 @@
     <a href="{% url 'pizzas:new_comment' pizza.id %}">Add new comment</a>
 </p>
 
+<p>Comments:</p>
+
+<ul>
+
+    {% for c in comments.all %}
+    <li>
+        <p>{{ c.text }}</p>
+    </li>
+    {% endfor %}
+
+</ul>
+
 {% endblock content %}

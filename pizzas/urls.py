@@ -10,3 +10,4 @@ urlpatterns = [
     path('pizzas/<int:pizza_id>/',views.pizza, name='pizza'),
     path('new_comment/<int:pizza_id>/', views.new_comment, name='new_comment'),
 ]
+
